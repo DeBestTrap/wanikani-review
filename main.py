@@ -25,7 +25,7 @@ def gen_chunks(prompt: str):
         "contents": prompt,
         "config": types.GenerateContentConfig(
             temperature=0.7,
-            max_output_tokens=4096,
+            max_output_tokens=16384,
             thinking_config=types.ThinkingConfig(include_thoughts=True),
         ),
     }
